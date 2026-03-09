@@ -1,3 +1,4 @@
 import '@a1rth/css-normalize/index.css'
 import './fonts.scss'
 import './varibles.scss'
+import './utils.scss'
