@@ -1,3 +1,5 @@
+@use 'constants' as *;
+@use 'sass:math';
 
 @function fluid($max: 100, $min: 10, $isEndOfLaptop: false) {
   $maxViewportWidth: $container-desktop-width;
@@ -20,4 +22,8 @@
     #{$yAxisIntersections * 1rem} + #{$slope * 100vw},
     #{$maxSize * 1rem}
   );
+}
+
+@function fluid-to-laptop($max: 100, $min: 10) {
+  @return fluid($max, $min, true)
 }
