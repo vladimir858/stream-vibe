@@ -1,5 +1,7 @@
 import {Head} from "minista"
 
+
+
 export default function () {
   return (
     <>
@@ -7,6 +9,7 @@ export default function () {
         <title>Hello!</title>
       </Head>
       <h1>Hello!</h1>
+
 
     </>
   )
