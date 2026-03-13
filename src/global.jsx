@@ -22,6 +22,7 @@ export default function (props) {
       </Head>
       <Header />
       <Content>
+
         {children}
       </Content>
       <Footer />
