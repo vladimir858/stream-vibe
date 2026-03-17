@@ -45,8 +45,6 @@ const Header = (props) => {
                   {label}
                 </a>
               </li>
-
-
             ))}
           </ul>
         </nav>
