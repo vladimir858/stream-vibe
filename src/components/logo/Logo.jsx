@@ -4,6 +4,7 @@ import classNames from "classnames";
 
 const Logo = (props) => {
   const {
+
     className,
     loading = 'lazy',
   } = props
