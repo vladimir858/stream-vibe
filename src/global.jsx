@@ -23,7 +23,6 @@ export default function (props) {
       </Head>
       <Header url={url} />
       <Content>
-
         {children}
       </Content>
       <Footer />
