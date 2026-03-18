@@ -13,6 +13,7 @@ const Icon = (props) => {
     <span
       className={classNames(className, 'icon')}
     >
+
       <MinistaIcon
         iconId={name}
         fill={hasFill ? 'currentColor' : 'none'}
