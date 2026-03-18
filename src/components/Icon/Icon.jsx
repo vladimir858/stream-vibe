@@ -6,8 +6,10 @@ const Icon = (props) => {
   const {
     className,
     name,
+
     hasFill = false,
   } = props
+
 
   return (
     <span
