@@ -35,7 +35,7 @@ const Header = (props) => {
           className="header__logo"
           loading="eager"
         />
-        <dialog className="header__overlay-menu-dialog " open >
+        <dialog className="header__overlay-menu-dialog "  >
           <nav className="header__menu">
             <ul className="header__menu-list">
               {menuItems.map(({ label, href }, index) => (
