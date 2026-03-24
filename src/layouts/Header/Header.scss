@@ -26,6 +26,8 @@
   }
 
   &__overlay-menu-dialog {
+    transition-behavior: allow-discrete;
+    transition-duration: var(--transition-duration) ;
     position: fixed;
     inset: 0;
     flex-direction: column-reverse;
@@ -41,9 +43,21 @@
       display: contents;
     }
 
+    @mixin starting-style{
+      opacity: 0;
+      translate: 50%;
+    }
     &[open] {
       display: flex;
+      @starting-style {
+        @include starting-style;
+      }
     }
+    &:not([open]){
+      @include starting-style;
+    }
+
+
   }
 
   &__menu {

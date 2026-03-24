@@ -2,7 +2,10 @@ import './BurgerButton.scss'
 import classNames from 'classnames'
 
 const BurgerButton = (props) => {
-  const {className} = props
+  const {
+    className,
+    extraAttrs
+  } = props
 const title = 'Open menu'
   return (
     <button
@@ -10,6 +13,7 @@ const title = 'Open menu'
       type="button"
       aria-label={title}
       title={title}
+      {...extraAttrs}
     >
       <svg
         className="burger-button__svg"
