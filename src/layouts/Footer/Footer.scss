@@ -40,8 +40,8 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 16px;
-    padding-top: fluid-to-laptop(24 , 20);
-    padding-bottom: fluid-to-laptop(50 , 20);
+    padding-top: fluid-to-laptop(24, 20);
+    padding-bottom: fluid-to-laptop(50, 20);
 
     @include mobile {
       flex-direction: column;
