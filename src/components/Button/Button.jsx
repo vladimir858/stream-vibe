@@ -24,8 +24,8 @@ const Button = (props) => {
 
   const isLink = href !== undefined
   const Component = isLink ? 'a' : 'button'
-  const linkProps = { href, target }
-  const buttonProps = { type }
+  const linkProps = {href, target}
+  const buttonProps = {type}
   const specificProps = isLink ? linkProps : buttonProps
   const title = isLabelHidden ? label : undefined
   const iconComponent = iconName && (

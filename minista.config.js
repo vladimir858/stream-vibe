@@ -36,7 +36,7 @@ export default defineConfig({
       outDir: 'assets/images',
       outName: '[dirname]',
       svgstoreOptions: {
-        cleanSymbols: ['fill', 'stroke' ],
+        cleanSymbols: ['fill', 'stroke'],
       },
     },
     fonts: {

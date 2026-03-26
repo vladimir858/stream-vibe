@@ -6,7 +6,7 @@ const BurgerButton = (props) => {
     className,
     extraAttrs
   } = props
-const title = 'Open menu'
+  const title = 'Open menu'
   return (
     <button
       className={classNames(className, 'burger-button')}
