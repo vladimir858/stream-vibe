@@ -1,4 +1,5 @@
 import Hero from "@/pages/sections/Hero";
+import Categories from "@/pages/sections/Categories";
 
 export const metadata = {
   title: 'Home',
@@ -9,6 +10,7 @@ export default function () {
   return (
     <>
      <Hero />
+      <Categories />
     </>
   )
 }
