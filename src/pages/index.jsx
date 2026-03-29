@@ -1,5 +1,5 @@
-import Hero from "@/pages/sections/Hero";
-import Categories from "@/pages/sections/Categories";
+import Hero from '@/sections/Hero'
+import Categories from '@/sections/Categories'
 
 export const metadata = {
   title: 'Home',
@@ -9,7 +9,7 @@ export const metadata = {
 export default function () {
   return (
     <>
-     <Hero />
+      <Hero />
       <Categories />
     </>
   )

@@ -1,6 +1,10 @@
 import Section from "@/layouts/Section/Section";
 import CategoryCard from "@/components/CategoryCard";
-
+import {Swiper} from "swiper";
+import Slider from "@/components/Slider";
+import SliderNavigation
+  from "@/components/Slider/components/SliderNavigation/SliderNavigation";
+const sliderNavigationId = "categories-slider-navigation" ;
 const Categories = (props) => {
   const {} = props
 const categoriesItems = [
@@ -55,9 +59,20 @@ const categoriesItems = [
       title="Explore our wide variety of categories"
       titleId="categories-title"
       description="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"
+      actions={(
+        <SliderNavigation
+          mode="tile"
+        id={sliderNavigationId}
+        />
+      )}
+
 
       isActionsHiddenOnMobile
     >
+    <Slider
+      navigationTargetElementId={sliderNavigationId}
+    >
+
       {categoriesItems.map((categoryItem, index) => (
         <CategoryCard
 
@@ -65,6 +80,7 @@ const categoriesItems = [
           key={index}
         />
       ))}
+      </ Slider >
 </Section>
   )
 }

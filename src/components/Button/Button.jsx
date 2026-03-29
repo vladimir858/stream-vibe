@@ -9,7 +9,7 @@ const Button = (props) => {
     href,
     target,
     /**
-     * '' (default) | 'transparent'
+     * '' (default) | 'transparent' | 'black-10'
      */
     mode = '',
     label,
@@ -20,12 +20,13 @@ const Button = (props) => {
      */
     iconPosition = 'before',
     hasFillIcon,
+    extraAttrs,
   } = props
 
   const isLink = href !== undefined
   const Component = isLink ? 'a' : 'button'
-  const linkProps = {href, target}
-  const buttonProps = {type}
+  const linkProps = { href, target }
+  const buttonProps = { type }
   const specificProps = isLink ? linkProps : buttonProps
   const title = isLabelHidden ? label : undefined
   const iconComponent = iconName && (
@@ -44,6 +45,7 @@ const Button = (props) => {
       title={title}
       aria-label={title}
       {...specificProps}
+      {...extraAttrs}
     >
       {iconPosition === 'before' && iconComponent}
       {!isLabelHidden && (

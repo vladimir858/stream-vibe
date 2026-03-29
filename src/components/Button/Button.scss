@@ -1,5 +1,4 @@
 .button {
-
   @include flex-center(true);
 
   column-gap: 4px;
@@ -32,13 +31,12 @@
   }
 
   &:has(.button__icon:only-child) {
-    @include square(fluid-to-laptop(56,44));
+    @include square(fluid-to-laptop(56, 44));
 
     padding: 0;
   }
 
   &--transparent {
-
     background-color: transparent;
 
     &:has(.button__icon:only-child) {
@@ -49,7 +47,8 @@
       }
     }
   }
-  &--black-10{
+
+  &--black-10 {
     background-color: var(--color-black-10);
     border: var(--border);
   }
