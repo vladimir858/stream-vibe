@@ -6,7 +6,6 @@ const Hero = (props) => {
   const playButtonTitle = "Play Video"
   const {} = props
 
-
   return (
     <section className="hero" aria-labelledby="hero-title" >
     <div className="hero__pano">
