@@ -6,7 +6,6 @@ const Grid = (props) => {
     children,
   } = props
 
-
   return (
     <ul
       className={classNames('grid', {
@@ -22,7 +21,6 @@ const Grid = (props) => {
         </li>
         )
       )}
-
     </ul>
 
 
