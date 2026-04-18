@@ -16,7 +16,7 @@ const Hero = (props) => {
           aria-label={playButtonTitle}
           title={playButtonTitle}
         >
-          <img className="hero__play-button-image" alt="" src="/Play.svg" width={470} height={470} />
+          <img className="hero__play-button-image" alt="" src="/play.svg" width={470} height={470} />
         </button>
       </div>
     </div>

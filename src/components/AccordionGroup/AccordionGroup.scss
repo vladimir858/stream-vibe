@@ -1,6 +1,7 @@
 .accordion-group {
   &--has-counter {
     --accordionGroupCounterHeight: #{fluid(67, 46)};
+
     counter-reset: custom-counter;
     list-style: none;
 

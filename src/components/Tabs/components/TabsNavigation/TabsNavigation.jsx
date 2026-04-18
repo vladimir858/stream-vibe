@@ -1,8 +1,7 @@
 import './TabsNavigation.scss'
-import getIdFromTitle from "@/utils/getIdFromTitle";
-import classNames from "classnames";
-import getTabsElementsIdFromTitle
-  from "@/components/Tabs/utils/getTabsElementsIdFromTitle";
+import getIdFromTitle from '@/utils/getIdFromTitle'
+import classNames from 'classnames'
+import getTabsElementsIdsFromTitle from '@/components/Tabs/utils/getTabsElementsIdsFromTitle'
 
 const TabsNavigation = (props) => {
   const {
@@ -15,32 +14,28 @@ const TabsNavigation = (props) => {
   const titleFormatted = getIdFromTitle(title)
   const titleId = `${titleFormatted}-title`
 
-
   return (
     <div
       className={classNames(className, 'tabs-navigation')}
       id={id}
-      role='tablist'
-      aria-label={titleId}
+      role="tablist"
+      aria-labelledby={titleId}
       data-js-tabs-navigation=""
     >
-      <h3
-        className="visually-hidden"
-        id={titleId}
-      >
+      <h3 className="visually-hidden" id={titleId}>
         {title}
       </h3>
       {items.map((item, index) => {
-        const {buttonId, contentId} = getTabsElementsIdFromTitle(item.title)
+        const { buttonId, contentId } = getTabsElementsIdsFromTitle(item.title)
+
         return (
           <div
-            className={classNames(
-              'tabs-navigation__button', {
-                'is-active': item.isActive,
-              })}
+            className={classNames('tabs-navigation__button', {
+              'is-active': item.isActive
+            })}
             id={buttonId}
             aria-controls={contentId}
-            role='tab'
+            role="tab"
             aria-selected={item.isActive}
             tabIndex={item.isActive ? 0 : -1}
             data-js-tabs-button=""
@@ -53,4 +48,5 @@ const TabsNavigation = (props) => {
     </div>
   )
 }
-export default TabsNavigation;
+
+export default TabsNavigation

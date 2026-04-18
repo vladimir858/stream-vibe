@@ -1,4 +1,4 @@
-import MoviesBanner from "../sections/MoviesBanner";
+import MoviesBanner from '@/sections/MoviesBanner'
 
 export const metadata = {
   title: 'Movies & Shows',

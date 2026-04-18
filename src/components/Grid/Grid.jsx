@@ -1,5 +1,6 @@
 import './Grid.scss'
 import classNames from 'classnames'
+
 const Grid = (props) => {
   const {
     columns = 1,
@@ -9,21 +10,19 @@ const Grid = (props) => {
   return (
     <ul
       className={classNames('grid', {
-        [`grid--${columns}`]: columns > 1 ,
+        [`grid--${columns}`]: columns > 1,
       })}
     >
-      {children.map((child, index)  => (
+      {children.map((child, index) => (
         <li
-          className="grid-item"
+          className="grid__item"
           key={index}
         >
           {child}
         </li>
-        )
-      )}
+      ))}
     </ul>
-
-
   )
 }
-export default Grid;
+
+export default Grid

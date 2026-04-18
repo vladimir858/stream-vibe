@@ -21,12 +21,12 @@ const planGroups = [
       },
       {
         title: 'Premium Plan',
-        description: 'Access to a widest selection of movies and shows, including all new releases and Offline Viewing' ,
+        description: 'Access to a widest selection of movies and shows, including all new releases and Offline Viewing',
         price: {
           value: '$14.99',
           label: '/month',
         },
-      }
+      },
     ]
   },
   {
@@ -50,15 +50,14 @@ const planGroups = [
       },
       {
         title: 'Premium Plan',
-        description: 'Access to a widest selection of movies and shows, including all new releases and Offline Viewing' ,
+        description: 'Access to a widest selection of movies and shows, including all new releases and Offline Viewing',
         price: {
           value: '$149.99',
           label: '/year',
         },
-      }
+      },
     ]
-  }
-
+  },
 ]
 
 export default planGroups
