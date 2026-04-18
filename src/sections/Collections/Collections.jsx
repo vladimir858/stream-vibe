@@ -6,13 +6,14 @@ import Section from "@/layouts/Section";
 import SliderNavigation from "@/components/Slider/components/SliderNavigation";
 import Slider from "@/components/Slider";
 import CategoryCard from "@/components/CategoryCard";
+import MovieCard from "@/components/MovieCard";
 
 const Collections = (props) => {
   const {} = props
 
   return (
     <Tabs
-      className="Collections container"
+      className="collections container"
       title="collections"
       isEnableOnlyOnMobile
       items={collectionsGroups.map((collectionGroup, index) => ({
@@ -25,11 +26,11 @@ const Collections = (props) => {
               {
                 collectionGroup.title}
             </p>
-            {
-              collectionGroup.items.map((collectionItem, index) => {
+            {collectionGroup.items.map((collectionItem, index) => {
                 const {
                   title,
                   categoryItems,
+                  movieItems,
                   sliderParams,
                 } = collectionItem
                 const titleFormated = `${getIdFromTitle(
@@ -58,14 +59,14 @@ const Collections = (props) => {
                     navigationTargetElementId={sliderNavigationId}
                     isBeyondTheViewportOnMobileS
                     >
-                      {categoryItems.map((categoryItem, index) => (
+                      {categoryItems?.map((categoryItem, index) => (
                         <CategoryCard
                           {...categoryItem}
                           key={index}
                         />
-                      ))}
-
-
+                      )) ?? movieItems?.map((movieItem, index) => (
+                        <MovieCard  {...movieItem} key={index} />
+                      ))  }
                     </Slider>
                     </ Section>
                 )
