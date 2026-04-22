@@ -1,3 +1,18 @@
 .person-card {
+ &__image {
+   width: fluid(102,70);
+   border-radius: var(--border-radius-l);
+   border: var(--border-width-s) solid transparent;
+   transition: var(--transition-duration);
+
+   @include laptop{
+     border-radius: var(--border-radius-m);
+   }
+   @include  hover{
+     border-color: var(--border-color-s);
+
+   }
+   )
+ }
 
 }
