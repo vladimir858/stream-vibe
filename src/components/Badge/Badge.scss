@@ -1,19 +1,19 @@
 .badge {
   @include flex-center(true);
-column-gap: 2px;
 
-padding: 6px 10px;
-  font-size: fluid-to-laptop(14,12);
-  font-weight: 500  ;
+  column-gap: 2px;
+  padding: 6px 10px;
+  font-size: fluid-to-laptop(14, 12);
+  font-weight: 500;
   line-height: 1;
   color: var(--color-gray-60);
   white-space: nowrap;
   background-color: var(--color-black-08);
-border: var(--border);
-  border-radius:50px ;
+  border: var(--border);
+  border-radius: 50px;
 
-  @include  mobile {
-    padding-inline:  8px;
+  @include mobile {
+    padding-inline: 8px;
   }
 
   &--accent {
@@ -23,19 +23,19 @@ border: var(--border);
     border-radius: var(--border-radius-xxs);
 
     @include laptop {
-      border-radius: var(--border-radius-xxxs)
+      border-radius: var(--border-radius-xxxs);
     }
   }
 
-  &--big{
-    padding: fluid-to-laptop(10,8);
-    font-size: fluid-to-laptop(16,12);
-    font-weight: 600 ;
+  &--big {
+    padding: fluid-to-laptop(10, 8);
+    font-size: fluid-to-laptop(16, 12);
+    font-weight: 600;
   }
+
   &__icon {
-    &.icon{
+    &.icon {
       --iconSize: #{fluid-to-laptop(24, 20)};
     }
   }
-
 }

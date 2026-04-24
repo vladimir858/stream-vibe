@@ -34,10 +34,8 @@ const MovieCard = (props) => {
             hasFillIcon
           >
             {duration}
-
           </Badge>
         )}
-
 
         {season && (
           <Badge

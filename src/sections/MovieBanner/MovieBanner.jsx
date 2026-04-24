@@ -1,9 +1,7 @@
-import './MovieBanner.scss'
-import MovieBannerCard from "@/components/MovieBannerCard";
+import MovieBannerCard from '@/components/MovieBannerCard'
 
-const MovieBanner = (props) => {
-  const {} = props
-const titleId = 'movie-banner-title'
+const MovieBanner = () => {
+  const titleId = 'movie-banner-title'
 
   return (
     <section
@@ -11,9 +9,9 @@ const titleId = 'movie-banner-title'
       aria-labelledby={titleId}
     >
       <MovieBannerCard
-        TitleTag='h1'
-        titleId={titleId}
         title="Kantara"
+        titleId={titleId}
+        TitleTag="h1"
         description="A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands."
         imgSrc="/src/assets/images/movie-banner/2.jpg"
         isSmallPaddingY
@@ -21,4 +19,5 @@ const titleId = 'movie-banner-title'
     </section>
   )
 }
-export default MovieBanner;
+
+export default MovieBanner

@@ -8,7 +8,7 @@ const SliderNavigation = (props) => {
     id,
     hasPagination = true,
     /**
-     * '' (default) | rounded 'tile'
+     * '' (default) | 'tile' | 'rounded'
      */
     mode = '',
     /**
@@ -16,7 +16,7 @@ const SliderNavigation = (props) => {
      */
     position = '',
     isHiddenMobile,
-    buttonMode = 'black-10'
+    buttonMode = 'black-10',
   } = props
 
   return (

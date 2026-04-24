@@ -1,6 +1,6 @@
 import './ReviewCard.scss'
-import Badge from "@/components/Badge";
-import RatingView from "@/components/RatingView";
+import Badge from '@/components/Badge'
+import RatingView from '@/components/RatingView'
 
 const ReviewCard = (props) => {
   const {
@@ -10,25 +10,19 @@ const ReviewCard = (props) => {
     ratingValue,
   } = props
 
-
   return (
-    <div
-      className="review-card"
-    >
+    <div className="review-card">
       <header className="review-card__header">
-<div className="review-card-author">
-  <h4 className="review-card__name h6">{name}</h4>
-  <div className="review-card__subtitle">
-    {subtitle}
-  </div>
-<Badge>
-  <RatingView
-  value={ratingValue}
-  label={ratingValue}
-  />
-</Badge>
-
-</div>
+        <div className="review-card__author">
+          <h4 className="review-card__name h6">{name}</h4>
+          <p className="review-card__subtitle">{subtitle}</p>
+        </div>
+        <Badge>
+          <RatingView
+            value={ratingValue}
+            label={ratingValue}
+          />
+        </Badge>
       </header>
       <div className="review-card__body">
         <p>{description}</p>
@@ -36,4 +30,5 @@ const ReviewCard = (props) => {
     </div>
   )
 }
-export default ReviewCard;
+
+export default ReviewCard

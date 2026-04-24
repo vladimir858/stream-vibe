@@ -16,7 +16,7 @@
 
     @include mobile-above {
       position: relative;
-      padding: 45px;
+      padding: var(--collectionsGroupPadding);
       border: var(--border);
       border-radius: var(--border-radius-l);
     }
@@ -24,7 +24,7 @@
 
   &__title {
     position: absolute;
-    left: 45px;
+    left: var(--collectionsGroupPadding);
     top: 0;
     translate: 0 -50%;
     padding: fluid-to-laptop(10, 8) fluid-to-laptop(24, 20);
