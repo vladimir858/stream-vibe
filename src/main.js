@@ -1,7 +1,9 @@
 import OverlayMenu from '@/modules/OverlayMenu'
 import SliderCollection from '@/modules/SliderCollection'
 import TabsCollection from '@/modules/TabsCollection'
+import InputMaskCollection from "@/modules/inputMaskCollection";
 
 new OverlayMenu()
 new SliderCollection()
 new TabsCollection()
+new InputMaskCollection()
