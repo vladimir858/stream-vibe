@@ -1,6 +1,7 @@
 import BaseComponent from '@/modules/generic/BaseComponent'
 import MatchMedia from '@/constants/MatchMedia'
 
+
 const rootSelector = '[data-js-select]'
 
 class Select extends BaseComponent {
@@ -11,6 +12,7 @@ class Select extends BaseComponent {
     dropdown: '[data-js-select-dropdown]',
     option: '[data-js-select-option]',
   }
+
 
 
   stateClasses = {
