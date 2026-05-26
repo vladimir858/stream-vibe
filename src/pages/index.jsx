@@ -10,6 +10,7 @@ export const metadata = {
   isHeaderFixed: true,
 }
 
+
 export default function () {
   return (
     <>
