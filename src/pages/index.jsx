@@ -5,6 +5,7 @@ import Questions from '@/sections/Questions'
 import Plans from '@/sections/Plans'
 
 
+
 export const metadata = {
   title: 'Home',
   isHeaderFixed: true,
