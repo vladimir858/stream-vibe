@@ -12,6 +12,7 @@ class Select extends BaseComponent {
     option: '[data-js-select-option]',
   }
 
+
   stateClasses = {
     isExpanded: 'is-expanded',
     isSelected: 'is-selected',
@@ -87,7 +88,7 @@ class Select extends BaseComponent {
   fixDropdownPosition = () => {
     const viewportWidth = document.documentElement.clientWidth
     const viewportCenterX = viewportWidth / 2
-    const { width, x } = this.buttonElement.getBoundingClientRect()
+    const {width, x} = this.buttonElement.getBoundingClientRect()
     const buttonCenterX = x + width / 2
     const isButtonOnTheLeftViewportSide = buttonCenterX < viewportCenterX
 
@@ -144,7 +145,7 @@ class Select extends BaseComponent {
   }
 
   onClick = (event) => {
-    const { target } = event
+    const {target} = event
 
     const isButtonClick = target === this.buttonElement
     const isOutsideDropdownClick = target.closest(this.selectors.dropdown) !== this.dropdownElement
@@ -153,7 +154,6 @@ class Select extends BaseComponent {
       this.collapse()
       return
     }
-
     const isOptionClick = target.matches(this.selectors.option)
 
     if (isOptionClick) {
@@ -211,7 +211,7 @@ class Select extends BaseComponent {
   }
 
   onKeyDown = (event) => {
-    const { code } = event
+    const {code} = event
 
     const action = {
       ArrowUp: this.onArrowUpKeyDown,
