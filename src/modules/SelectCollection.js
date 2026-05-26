@@ -12,6 +12,7 @@ class Select extends BaseComponent {
     option: '[data-js-select-option]',
   }
 
+
   stateClasses = {
     isExpanded: 'is-expanded',
     isSelected: 'is-selected',
