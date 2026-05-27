@@ -38,6 +38,7 @@ const MovieBannerCard = (props) => {
         <footer className="movie-banner-card__footer">
           <Button
             className="movie-banner-card__play-button"
+            hasFillIcon
             iconName="play"
             label="Play Now"
           />
